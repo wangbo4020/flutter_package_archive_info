@@ -1,6 +1,6 @@
 # package_archive_info
 
-A new Flutter plugin.
+A get archive info for package of local file. 
 
 ## Getting Started
 
