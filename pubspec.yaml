@@ -1,7 +1,6 @@
 name: package_archive_info
 description: A get archive info for package of local file.
 version: 0.0.1
-author: Dylan
 homepage: https://github.com/wangbo4020/flutter_package_archive_info
 
 environment:
@@ -32,8 +31,8 @@ flutter:
       android:
         package: com.wangbo4020.package_archive_info
         pluginClass: PackageArchiveInfoPlugin
-      ios:
-        pluginClass: PackageArchiveInfoPlugin
+  #    ios:
+  #      pluginClass: PackageArchiveInfoPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
