@@ -1,5 +1,5 @@
 name: package_archive_info
-description: A get archive info for package of local file.
+description: A get archive info from local file for package.
 version: 0.0.1
 homepage: https://github.com/wangbo4020/flutter_package_archive_info
 

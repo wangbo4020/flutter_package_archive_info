@@ -1,6 +1,6 @@
 # package_archive_info
 
-A get archive info for package of local file. 
+A get archive info from local file for package.
 
 ## Getting Started
 
