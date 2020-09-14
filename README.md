@@ -1,6 +1,6 @@
-# package_archive_info
+# PackageArchiveInfo
 
-A get archive info from local file for package.
+This Flutter plugin provides an API for querying information about an .apk file on Android.
 
 ## Getting Started
 

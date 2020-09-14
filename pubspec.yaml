@@ -1,6 +1,7 @@
 name: package_archive_info
-description: A get archive info from local file for package.
-version: 0.0.1
+description: Flutter plugin for querying information about the .apkpackage on Android,
+  such as versionCode.
+version: 0.0.2
 homepage: https://github.com/wangbo4020/flutter_package_archive_info
 
 environment:
