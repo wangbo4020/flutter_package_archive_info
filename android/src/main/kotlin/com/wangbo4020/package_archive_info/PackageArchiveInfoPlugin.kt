@@ -45,7 +45,12 @@ public class PackageArchiveInfoPlugin: FlutterPlugin, MethodCallHandler {
       }
 
       val pm: PackageManager = context.packageManager
-      val info: PackageInfo = pm.getPackageArchiveInfo(filePath, 0)
+      val info = pm.getPackageArchiveInfo(filePath, 0)
+
+      if (info == null) {
+        result.error("Invalid", "Package parse error", filePath)
+        return
+      }
 
       val map: MutableMap<String, String> = HashMap()
       map["appName"] = info.applicationInfo.loadLabel(pm).toString()
