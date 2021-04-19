@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  PackageArchiveInfo _info;
+  PackageArchiveInfo? _info;
 
   @override
   void initState() {
@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    PackageArchiveInfo info;
+    PackageArchiveInfo? info;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       info = await PackageArchiveInfo.fromPath("Your path");

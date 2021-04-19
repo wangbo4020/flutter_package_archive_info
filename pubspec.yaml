@@ -1,18 +1,17 @@
 name: package_archive_info
 description: Flutter plugin for querying information about the .apk file on Android,
   such as versionCode.
-version: 0.0.2
+version: 0.1.0
 homepage: https://github.com/wangbo4020/flutter_package_archive_info
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
-  flutter: ">=1.12.13+hotfix.5 <2.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  package_info: '>=0.4.3 <2.0.0'          # https://pub.dev/packages/package_info
+  package_info: ^2.0.0              # https://pub.dev/packages/package_info
 
 dev_dependencies:
   flutter_test:

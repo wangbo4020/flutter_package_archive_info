@@ -32,10 +32,10 @@ class PackageArchiveInfo extends PackageInfo {
   /// See [fromPath] for the right API to get a [PackageArchiveInfo] that's
   /// actually populated with real data.
   PackageArchiveInfo({
-    String appName,
-    String packageName,
-    String version,
-    String buildNumber,
+    required String appName,
+    required String packageName,
+    required String version,
+    required String buildNumber,
   }) : super(
           appName: appName,
           packageName: packageName,
@@ -51,11 +51,12 @@ class PackageArchiveInfo extends PackageInfo {
     return _channel.invokeMapMethod('getPackageArchiveInfo', {
       "archiveFilePath": path,
     }).then<PackageArchiveInfo>((map) {
+      map!;
       return PackageArchiveInfo(
         appName: map["appName"],
-        packageName: map["packageName"],
-        version: map["version"],
-        buildNumber: map["buildNumber"],
+        packageName: map["packageName"]!,
+        version: map["version"]!,
+        buildNumber: map["buildNumber"]!,
       );
     });
   }
